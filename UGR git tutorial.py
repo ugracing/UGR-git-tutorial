@@ -36,7 +36,8 @@ def win_or_lose(player_input, computer_play, lost):
 
 
 def who_won(play_num, lost_num, win_num):
-    print("We played", str(play_num), "time(s). You won", str(win_num), "time(s).")
+    print("We played", str(play_num), "time(s). You won", str(win_num), "time(s) and we tied",
+          str(play_num-lost_num-win_num), ".")
 
     if lost_num > win_num:
         print("𓆏 This means I won!! I must say, it is rather sad for a human to loose to a virtual frog.")
